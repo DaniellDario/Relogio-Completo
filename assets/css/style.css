@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans' ,sans-serif;
+}
+
+img {
+    width: 50px;
+    border-top: 10px;
+}
+
+.trocarExtenso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 60px;
+    height: 60px;
+}
+
+.trocarExtenso :hover {
+    background-color: rgba(128, 128, 128, 0.205);
+    border-radius: 50%;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(0deg, #805b16d8, #0c82f0da);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.relogio, .calendario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 260px;
+    width: 1000px;
+    background: transparent;
+    border-radius: 3px;
+}
+
+.calendario {
+    align-items: center;
+}
+
+.relogio div, .calendario div{
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+
+.relogio span, .calendario span{
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+.relogio span.tempo , .calendario span.tempo{
+    font-size: 20px;
+}
